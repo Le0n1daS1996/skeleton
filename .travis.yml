@@ -1,9 +1,17 @@
+sudo: false
 language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 node_js:
-  - "6"
-  - "6.1"
-  - "5.11"
-  - "iojs"
+  - iojs
+before _install:
+  - npm i -g npm@^2.0.0
 before_script:
-  - npm install -g gulp
-script: gulp test
+  - npm prune
+script:
+  - npm run test
+after_success:
+  - npm run build
