@@ -15,5 +15,7 @@ Chrome extension: Show structure of the HTML page
 
 ## What's next?
 
+
+- build passing: [![Build Status](https://travis-ci.org/Le0n1daS1996/skeleton.svg?branch=master)](https://travis-ci.org/Le0n1daS1996/skeleton)
 - [TODO](https://github.com/Auxoft/skeleton/blob/master/docs/tasks.md)
 
