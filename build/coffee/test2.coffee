@@ -1,3 +1,6 @@
+require 'coveralls'
+Coveralls.wear!
+
 Hello = (k) ->
 	if k==5
 		"Hello world!"
