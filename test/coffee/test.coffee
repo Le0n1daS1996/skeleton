@@ -1,5 +1,3 @@
-require 'coveralls'
-Coveralls.wear!
 assert= require 'assert'
 file = require './../../build/coffee/test2.coffee'
 
