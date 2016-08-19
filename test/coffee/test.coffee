@@ -7,7 +7,7 @@ describe "Hello", ->
 		assert.equal(file.Hello(3),'Privet!')
 
 	it "Hello admin!", ->
-		assert.equal(file.Looking("Le0n1daS"),'Hello Le0n1daS'
+		assert.equal(file.Looking("Le0n1daS"),'Hello Le0n1daS')
 
 	it "Fuck admin!", ->
 		assert.equal(file.Looking("Le0n1das"),'Fuck Off!')
