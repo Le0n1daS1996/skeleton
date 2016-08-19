@@ -4,10 +4,10 @@ file = require './../../build/coffee/test2.coffee'
 describe "Hello", -> 
 
 	it "Output Privet", ->
-		assert.equal(file.Hello(3),'Privet!')
+		assert.equal(file.Hello(3),'Priv3et!')
 
 	it "Hello admin!", ->
-		assert.equal(file.Looking("Le0n1daS"),'Hello Le0n1daS')
+		assert.equal(file.Looking("Le0n1daS"),'Hello Le0n1das')
 
 	it "Fuck admin!", ->
 		assert.equal(file.Looking("Le0n1das"),'Fuck Off!')
