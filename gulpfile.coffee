@@ -3,17 +3,20 @@ mocha = require 'gulp-mocha'
 istanbul = require 'gulp-coffee-istanbul'
 config = require './src/config/webpack.config.js'
 webpack = require 'webpack-stream'
+coveralls = require 'gulp-coveralls'
 
 
 gulp.task 'test',['pre-test'], ->
   gulp.src './test/coffee/test.coffee', {read: false}
     .pipe mocha ({compilers: 'coffee:coffee-script'})
     .pipe istanbul.writeReports()
+    .pipe coveralls()
 
 gulp.task 'pre-test', ->
   return gulp.src ['./build/coffee/test2.coffee']
     .pipe istanbul {includeUntested: true}
     .pipe istanbul.hookRequire()
+    .pipe coveralls()
 
 
 
