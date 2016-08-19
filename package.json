@@ -9,8 +9,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "build": "gulp",
-    "coveralls": "gulp coveralls"
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
