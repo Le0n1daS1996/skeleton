@@ -11,7 +11,7 @@
     "test": "gulp test",
     "build": "gulp",
     "coveralls": "gulp coveralls",
-    "sh": "sh -c build.sh"
+    "sh": "sh -c ./build.sh"
   },
   "repository": {
     "type": "git",
