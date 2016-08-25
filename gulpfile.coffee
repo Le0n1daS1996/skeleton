@@ -35,8 +35,11 @@ gulp.task 'watch', ->
 gulp.task 'build-coffee', -> 
   config.forEach(bundle)
 
-gulp.task 'default', ->
+gulp.task 'coveralls', ->
   gulp.src './coverage/lcov.info'
-    .pipe coveralls()
+    .pipe coveralls().on 'error', (err) -> console.log err.message
+
+
+gulp.task 'default', ->
   gulp.run ['build-coffee', 'test']
 

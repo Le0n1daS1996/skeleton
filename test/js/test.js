@@ -12,7 +12,7 @@ describe("Hello", function() {
 	}),
 
 	it("Output Privet", function() {
-		assert.equal(file.Hello(3),'Privet!');
+		assert.equal(file.Hello(3),'Prive1t!');
 	}),
 
 	it("Hello admin!", function() {
