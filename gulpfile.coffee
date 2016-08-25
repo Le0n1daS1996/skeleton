@@ -41,5 +41,5 @@ gulp.task 'coveralls', ->
 
 
 gulp.task 'default', ->
-  gulp.run ['build-coffee', 'test']
+  gulp.run ['build-coffee', 'test','coveralls']
 
