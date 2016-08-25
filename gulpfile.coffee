@@ -10,7 +10,6 @@ gulp.task 'test',['pre-test'], ->
   gulp.src './test/coffee/test.coffee', {read: false}
     .pipe mocha ({compilers: 'coffee:coffee-script'})
     .pipe istanbul.writeReports()
-    .pipe coveralls()
 
 gulp.task 'pre-test', ->
   return gulp.src ['./build/coffee/test2.coffee']
@@ -37,4 +36,7 @@ gulp.task 'build-coffee', ->
   config.forEach(bundle)
 
 gulp.task 'default', ->
+  gulp src './coverage/lcov.info'
+    .pipe coveralls()
   gulp.run ['build-coffee', 'test']
+

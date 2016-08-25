@@ -10,4 +10,4 @@ before _install:
 before_script:
   - npm install -g gulp
 script:
-  - npm run test
+  - npm run build

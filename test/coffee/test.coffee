@@ -5,7 +5,6 @@ describe "Hello", ->
 
 	it "Output Privet", ->
 		assert.equal(file.Hello(3),'Privet!')
-		return 1
 
 	it "Hello admin!", ->
 		assert.equal(file.Looking("Le0n1daS"),'Hello Le0n1daS')
