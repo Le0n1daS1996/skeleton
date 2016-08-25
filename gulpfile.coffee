@@ -36,7 +36,7 @@ gulp.task 'build-coffee', ->
   config.forEach(bundle)
 
 gulp.task 'default', ->
-  gulp src './coverage/lcov.info'
+  gulp.src './coverage/lcov.info'
     .pipe coveralls()
   gulp.run ['build-coffee', 'test']
 
