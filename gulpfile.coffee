@@ -15,7 +15,6 @@ gulp.task 'pre-test', ->
   return gulp.src ['./build/coffee/test2.coffee']
     .pipe istanbul {includeUntested: true}
     .pipe istanbul.hookRequire()
-    .pipe coveralls()
 
 
 
