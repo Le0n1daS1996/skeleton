@@ -10,7 +10,8 @@
   "scripts": {
     "test": "gulp test",
     "build": "gulp",
-    "coveralls": "gulp coveralls"
+    "coveralls": "gulp coveralls",
+    "sh": "sh -c build.sh"
   },
   "repository": {
     "type": "git",
