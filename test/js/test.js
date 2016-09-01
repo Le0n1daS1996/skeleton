@@ -12,7 +12,7 @@ describe("Hello", function() {
 	}),
 
 	it("Output Privet", function() {
-		assert.equal(file.Hello(3),'Prive1t!');
+		assert.equal(file.Hello(3),'Privet!');
 	}),
 
 	it("Hello admin!", function() {
@@ -21,5 +21,20 @@ describe("Hello", function() {
 
 	it("Fuck admin!", function() {
 		assert.equal(file.Looking("Le0n1das"),'Fuck Off!');
+	})
+})
+
+describe("webdriverIO", function() {
+
+	it("getUrl", function() {
+		
+		browser
+    	.url('/')
+    	.setValue('#lst-ib', 'LionaHero#')
+    	.click('#sbds')
+    var title = browser.getTitle();
+    var url = browser.getUrl();
+    console.log('Title is: ' + title);
+    console.log('Url is: ' + url);
 	})
 })
